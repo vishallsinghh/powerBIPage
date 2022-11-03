@@ -26,146 +26,26 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ["Inter", "sans-serif"],
             },
           },
         },
-      }
+      };
     </script>
   </head>
-  <style>
-    body {
-      margin: 0px;
-      /* background: #1e242a; */
-    }
-    #main {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      overflow: hidden;
-    }
-    #box1 {
-      width: 530px;
-      height: 625px;
-      background-image: url('11.png');
-      position: absolute;
-      bottom: -100%;
-      left: 30%;
-      animation: anim 0.5s forwards, anim2 0.5s forwards 3s;
-    }
-    #box1:after {
-      content: '';
-      position: absolute;
-      width: 530px;
-      height: 625px;
-      background-image: url('22.png');
-      left: 0px;
-      z-index: -1;
-    }
-    @keyframes anim {
-      from {
-        bottom: -100%;
-      }
-      to {
-        bottom: 0%;
-      }
-    }
-    @keyframes anim2 {
-      from {
-        left: 30%;
-        width: 530px;
-      }
-      to {
-        width: 0px;
-        left: 50%;
-      }
-    }
-    #box2 {
-      width: 542px;
-      height: auto;
-      position: absolute;
-      top: 165px;
-      left: 129px;
 
-      overflow: hidden;
-    }
-    #text {
-      position: relative;
-      font-size: 3em;
-      font-weight: 600;
-      line-height: 60px;
-      color: #1a3454;
-      left: -100%;
-      animation: anim3 1.5s forwards 0.5s;
-    }
-    #text2 {
-      font-size: 2em;
-      font-weight: 600;
-      line-height: 40px;
-      color: #1a3454;
-      position: relative;
-      left: -100%;
-      animation: anim5 1s forwards 0.9s;
-    }
-    #box2 p {
-      padding-top: 30px;
-      font-size: 1.3em;
-      position: relative;
-      left: -100%;
-      animation: anim5 1s forwards 0.2s;
-    }
-    .buyNowbtn {
-      margin: 30px 10px;
-      position: relative;
-      left: -100%;
-      animation: anim5 1s forwards 0.3s;
-    }
-    .buyNowbtn a {
-      background-color: white;
-      border-radius: 20px;
-      padding: 10px 20px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    @keyframes anim3 {
-      from {
-        left: -100%;
-      }
-      to {
-        left: 0%;
-      }
-    }
-    @keyframes anim5 {
-      from {
-        left: -100%;
-      }
-      to {
-        left: 0%;
-      }
-    }
-    #box3 {
-      overflow: hidden;
-      position: absolute;
-      top: 135px;
-      right: 50px;
-    }
-    #box3 img {
-      position: relative;
-      left: 0;
-      animation: anim4 1s;
-    }
-    #container {
-      width: 100%;
-    }
-    @keyframes anim4 {
-      from {
-        top: 335px;
-      }
-      to {
-        top: 0px;
-      }
-    }
-  </style>
-  <body class="relative">
+  <body
+    class="relative"
+    style="
+      background: linear-gradient(
+        100deg,
+        #fbe1cc 0%,
+        #d1d5f0 70%,
+        #fbe1cc 100%
+      );
+      height: 100vh;
+    "
+  >
     <header class="fixed w-full z-10 h-16 flex justify-center" style="top: 0">
       <div id="headerbar" class="h-full w-full flex justify-center transition">
         <div
@@ -273,15 +153,15 @@
         </div>
       </div>
     </header>
-    <div
+    <!-- <div
       class="w-full h-500px xl:h-550px lg:h-600px sm:h-500px -z-10 absolute home-effect"
       style="height: 100vh"
-    ></div>
-    <div class="container">
+    ></div> -->
+    <div id="container">
       <div id="box2">
-        <h1 id="text">BUDGET SALE</h1>
-        <h1 id="text2">DASHBOARD POWER UI</h1>
-        <p>
+        <h1 id="text" class="textresp">BUDGET SALE</h1>
+        <h1 id="text2" class="textresp">DASHBOARD POWER UI</h1>
+        <p class="textresp">
           We are a creative digital company, offering state-of-the-art web
           development services with top-notch design and technical skills
         </p>

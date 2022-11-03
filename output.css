@@ -2131,3 +2131,132 @@ img.grayscale:hover {
     line-height: 1;
   }
 }
+
+
+/* custom css for powerBI intermediate page to click on live demo */
+
+#box2 {
+  width: 542px;
+  height: auto;
+  position: absolute;
+  top: 165px;
+  left: 129px;
+
+  overflow: hidden;
+}
+#text {
+  position: relative;
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 60px;
+  color: #1a3454;
+  left: -100%;
+  animation: anim3 1.5s forwards 0.5s;
+}
+#text2 {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 40px;
+  color: #1a3454;
+  position: relative;
+  left: -100%;
+  animation: anim5 1s forwards 0.9s;
+}
+#box2 p {
+  padding-top: 30px;
+  font-size: 1.3em;
+  position: relative;
+  left: -100%;
+  animation: anim5 1s forwards 0.2s;
+}
+.buyNowbtn {
+  margin: 30px 10px;
+  position: relative;
+  left: -100%;
+  animation: anim5 1s forwards 0.3s;
+}
+.buyNowbtn a {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@keyframes anim3 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes anim5 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+#box3 {
+  overflow: hidden;
+  position: absolute;
+  top: 135px;
+  right: 50px;
+}
+#box3 img {
+  position: relative;
+  left: 0;
+  animation: anim4 1s;
+}
+#container {
+  width: 100%;
+}
+@keyframes anim4 {
+  from {
+    top: 335px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width:980px){
+  #container{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+  }
+  #box2{
+    position: initial;
+    font-size: 0.8em;
+  }
+  .textresp{
+    text-align: center;
+  }
+  #box3{
+    position: initial;
+  }
+  #box3 img{
+    width: 400px;
+  }
+  .buyNowbtn{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width:500px){
+  .textresp{
+    width: 100%;
+  }
+  #box3 img{
+    width: 310px;
+  }
+  #box2{
+    width: 100%;
+  }
+}
