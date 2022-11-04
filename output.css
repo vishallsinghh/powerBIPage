@@ -2219,7 +2219,33 @@ img.grayscale:hover {
     top: 0px;
   }
 }
+@media screen and (max-width:1550px){
+  #box3 img{
+    width: 600px;
+  }
+}
+@media screen and (max-width:1300px){
 
+  #text{
+    font-size: 2.2em;
+  }
+  #text2{
+    font-size: 1.8em;
+  }
+  #box2 p{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width:1300px){
+  #box2{
+    width: 350px;
+  }
+}
+@media screen and (max-width:1300px){
+  #box3 img{
+    width: 500px;
+  }
+}
 @media screen and (max-width:980px){
   #container{
     display: flex;
@@ -2251,7 +2277,7 @@ img.grayscale:hover {
 }
 @media screen and (max-width:500px){
   .textresp{
-    width: 100%;
+    padding: 0 6px;
   }
   #box3 img{
     width: 310px;
